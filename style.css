@@ -1,39 +1,114 @@
-body {
-    font-family: Arial, sans-serif;
+/* General Styles */
+* {
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
-    color: #333;
+    box-sizing: border-box;
 }
 
-header {
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+    line-height: 1.6;
+    padding-top: 20px;
+}
+
+/* Header Styles */
+.header {
+    text-align: center;
     background-color: #4CAF50;
     color: white;
-    padding: 20px;
-    text-align: center;
+    padding: 20px 0;
 }
 
-section {
-    padding: 20px;
-    margin: 10px;
+.header h1 {
+    font-size: 2.5rem;
+}
+
+/* Main Content Styles */
+.main-content {
+    padding: 40px 15%;
+}
+
+/* About Me Section */
+.about-me {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+.about-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 40px;
     background-color: white;
+    padding: 30px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     border-radius: 8px;
+    max-width: 1000px;
+    margin: 0 auto;
 }
 
-footer {
+.image-container {
+    flex: 1;
+    max-width: 150px;
+}
+
+.profile-image {
+    width: 100%;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.text-container {
+    flex: 2;
+    max-width: 600px;
+}
+
+.text-container h2 {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.text-container p {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 10px;
+}
+
+.text-container ul {
+    list-style-type: none;
+    margin-bottom: 20px;
+}
+
+.text-container li {
+    font-size: 1rem;
+    color: #444;
+}
+
+.text-container li strong {
+    color: #4CAF50;
+}
+
+/* Footer Styles */
+.footer {
+    background-color: #333;
+    color: white;
     text-align: center;
     padding: 10px;
-    background-color: #4CAF50;
-    color: white;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-}
-.profile-image {
-    width: 150px;
-    height: 150px;
-    border-radius: 50%; /* Makes the image circular */
-    object-fit: cover; /* Ensures the image is well-cropped within the circular frame */
-    margin-bottom: 20px; /* Adds space below the image */
 }
 
+.footer a {
+    color: #4CAF50;
+    text-decoration: none;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}
