@@ -32,7 +32,8 @@ footer {
 .profile-image {
     width: 150px;
     height: 150px;
-    border-radius: 50%;
-    object-fit: cover;
-    margin-bottom: 20px;
+    border-radius: 50%; /* Makes the image circular */
+    object-fit: cover; /* Ensures the image is well-cropped within the circular frame */
+    margin-bottom: 20px; /* Adds space below the image */
 }
+
